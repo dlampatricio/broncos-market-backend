@@ -28,6 +28,16 @@
         "videos",
         "audios"
       ]
+    },
+    "homeImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

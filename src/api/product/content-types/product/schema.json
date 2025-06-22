@@ -50,6 +50,17 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "weight": {
+      "type": "string"
+    },
+    "familySize": {
+      "type": "string"
+    },
+    "min": {
+      "type": "integer",
+      "default": 1,
+      "min": 1
     }
   }
 }
