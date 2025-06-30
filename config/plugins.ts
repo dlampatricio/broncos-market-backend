@@ -8,7 +8,12 @@ module.exports = ({ env }) => ({
         api_secret: env('CLOUDINARY_API_SECRET'),
       },
       actionOptions: {
-        upload: {},
+        upload: {
+          folder: env('CLOUDINARY_FOLDER', 'strapi_uploads'), // Opcional: organiza en carpetas
+          use_filename: true, // Mantiene el nombre original
+          unique_filename: false,
+          overwrite: false,
+        },
         delete: {},
       },
     },
